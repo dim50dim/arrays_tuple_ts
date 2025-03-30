@@ -9,10 +9,11 @@ const ar_2 = [99, 100, 110];
 document.querySelector('.out-2').textContent = ar_2.join('_');
 // Task 03
 // Создайте массив ar_3, состоящий из строк 'Hello', 'Hi', 'Trust'. Тип данных укажите самостоятельно. Напишите функцию, f03, которая фильтрует массив ar3, возвращая новый массив, в котором находятся элементы длиной не менее 4 символов.
-// const ar_3 
+const ar_3 = ['Hello', 'Hi', 'Trust'];
 // тут создаете f03 стрелочную!!!
+const f03 = (arr) => arr.filter(item => item.length >= 4);
 document.querySelector('.b-3').addEventListener('click', () => {
-    // document.querySelector('.out-3').textContent = f03(ar_3).join(' ');
+    document.querySelector('.out-3').textContent = f03(ar_3).join(' ');
 });
 // Task 04
 // Создайте массив ar_4 состоящий из чисел. Заполните значениями самостоятельно. Напишите функцию f04, которая принимает массив как аргумент, и возвращает сумму элементов массива. Тип данных функции напишите самостоятельно.

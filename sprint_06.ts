@@ -14,12 +14,13 @@ document.querySelector('.out-2').textContent = ar_2.join('_');
 // Task 03
 // Создайте массив ar_3, состоящий из строк 'Hello', 'Hi', 'Trust'. Тип данных укажите самостоятельно. Напишите функцию, f03, которая фильтрует массив ar3, возвращая новый массив, в котором находятся элементы длиной не менее 4 символов.
 
-// const ar_3 
+const ar_3 : string[] = ['Hello','Hi','Trust'];
 
 // тут создаете f03 стрелочную!!!
+const f03 =(arr:string[]) : string[] => arr.filter(item=> item.length >= 4);
 
 document.querySelector('.b-3').addEventListener('click', () : void => {
-    // document.querySelector('.out-3').textContent = f03(ar_3).join(' ');
+    document.querySelector('.out-3').textContent = f03(ar_3).join(' ');
 });
 
 // Task 04
