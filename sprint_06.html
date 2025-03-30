@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sprint 06. TypeScript - itgid.info</title>
+  <meta name="author" content="itgid.info">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/night.css"> -->
+  <link rel="icon" type="image/svg+xml" href="https://itgid.info/favicon.svg">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="one-column">
+        <h1>TypeScript. Sprint 06</h1>
+        <h2>Массивы и кортежи в TypeScript</h2>
+        <p>course <a href="https://itgid.info">itgid.info</a></p>
+
+        <p>Для применения темы "ночь" удалите комментарий с night.css. </p>
+        <p>Условие: везде где не сказано о способе задания типа данных - тип задается явно.</p>
+
+        <section>
+          <h3>Task 01</h3>
+          <p>Создайте массив чисел ar_1 содержащих элементы 77, 88, 99 в таком же порядке как указано. Тип укажите
+            самостоятельно. Выведите в консоль.</p>
+        </section>
+
+        <section>
+          <h3>Task 02</h3>
+          <p>Создайте массив чисел ar_2 содержащих элементы 99, 100, 110 в таком же порядке как указано. Тип укажите самостоятельно. Выведите в .out-2 разделитель знак подчеркивания. В этой и далее задачах с разделителем приемлемым будет ответ и 99_100_110_ и 99_100_110.</p>
+          <div class="out-2 out"></div>
+        </section>
+
+        <section>
+          <h3>Task 03</h3>
+          <p>Создайте массив ar_3, состоящий из строк 'Hello', 'Hi', 'Trust'. Тип данных укажите самостоятельно.
+            Напишите функцию, f03, которая фильтрует массив ar3, возвращая новый массив, в котором находятся элементы
+            длиной не менее 4 символов.</p>
+          <div><button class="button-primary b-3">button b-3</button></div>
+          <div class="out out-3"></div>
+        </section>
+
+        <section>
+          <h3>Task 04</h3>
+          <p>Создайте массив ar_4 состоящий из чисел. Заполните значениями самостоятельно. Напишите функцию, которая
+            принимает массив как аргумент, и возвращает сумму элементов массива. Тип данных функции напишите
+            самостоятельно.</p>
+          <div><button class="button-primary b-4">button b-4</button></div>
+          <div class="out out-4"></div>
+        </section>
+
+        <section>
+          <h3>Task 05</h3>
+          <p>Создайте функцию, которая выводит массив ar_5 в .out-5. Вывод осуществляйте циклом. Разделитель - дефис.
+          </p>
+          <div><button class="button-primary b-5">button b-5</button></div>
+          <div class="out out-5"></div>
+        </section>
+
+        <section>
+          <h3>Task 06</h3>
+          <p>Напишите функцию, f06, которая создает массив состоящий только из чисел массива ar_06 и возвращает его.
+          </p>
+          <div><button class="button-primary b-6">button b-6</button></div>
+          <div class="out out-6"></div>
+        </section>
+
+        <section>
+          <h3>Task 07</h3>
+          <p>Создайте readonly массив ar_07 содержащий всего два значения true, false. Тип задайте самостоятельно.
+            Выведите массив в консоль.</p>
+        </section>
+
+        <section>
+          <h3>Task 08</h3>
+          <p>Создайте функцию, которая читает число из input.i-8 и если число четное, то делает его push в массив ar_08,
+            если не четное то unshift в массив. Массив создайте глобально по отношению к функции. Результат - выводите в
+            .out-8, разделитель - подчеркивание.</p>
+          <div><input type="number" class="i-8"></div>
+          <div><button class="button-primary b-8">button b-8</button></div>
+          <div class="out out-8"></div>
+        </section>
+
+
+        <section>
+          <h3>Task 09</h3>
+          <p>Создайте функцию, которая принимает целое число n как аргумент и возвращает массив длиной n наполненный
+            случайными числами от 0 до 10.</p>
+
+          <div><button class="button-primary b-9">button b-9</button></div>
+          <div class="out out-9"></div>
+        </section>
+
+        <section>
+          <h3>Task 10</h3>
+          <p>Создайте функцию, которая принимает массив ar_10 и возвращает два массива, первый из которых содержит только
+            четные числа из исходного массива, а второй только нечетные числа. </p>
+
+          <div><button class="button-primary b-10">button b-10</button></div>
+          <div class="out out-101"></div>
+          <div class="out out-102"></div>
+        </section>
+
+        <section>
+          <h3>Task 11</h3>
+          <p> Создайте функцию, которая выводит в .out-11 одномерный массив ar_11. Если в массиве встречается число 1, то
+            на выводе оно заменяется на 'X' - латинскую X в верхнем регистре. Разделитель - пробел.</p>
+
+          <div><button class="button-primary b-11">button b-11</button></div>
+          <div class="out out-11"></div>
+        </section>
+
+        <section>
+          <h3>Task 12</h3>
+          <p>Создайте функцию, которая выводит в .out-12 одномерный массив ar_12. Если в массиве встречается число 1, то
+            на выводе оно заменяется на 'X' - латинскую X в верхнем регистре. Разделитель - пробел. При нажатии кнопки
+            значение 1 в массиве должно смещаться вправо, а старое положение заменять на 0. Положение единицы
+            определяется счетчиком count.</p>
+          <p>Пример работы на gif:</p>
+          <img src="./count.gif" alt="" style="border:1px solid #000; padding: 10px;">
+
+          <div><button class="button-primary b-12">button b-12</button></div>
+          <div class="out out-12"></div>
+        </section>
+
+        <section>
+          <h3>Task 13</h3>
+          <p>Создайте функцию которая в массиве ar_13 заменяет числа 1 на 0, а 0 на 1. Выводит массив на страницу,
+            разделитель между элементами - пробел, разделитель между строками перенос строки.</p>
+
+          <div><button class="button-primary b-13">button b-13</button></div>
+          <div class="out out-13"></div>
+        </section>
+
+        <section>
+          <h3>Task 16</h3>
+          <p>Создан кортеж k16. Напишите функцию, которая меняет в нем числа - добавляет к каждому числу по 10. Выведите
+            в .out-16 сумму элементов кортежа.</p>
+
+          <div><button class="button-primary b-16">button b-16</button></div>
+          <div class="out out-16"></div>
+        </section>
+
+        <section>
+          <h3>Task 17</h3>
+          <p>Создан кортеж k17. Напишите функцию, которая выводит в .out-17 сумму элементов кортежа. Обратите внимание -
+            количество элементов кортежа при проверке может меняться. </p>
+
+          <div><button class="button-primary b-17">button b-17</button></div>
+          <div class="out out-17"></div>
+        </section>
+
+        <section>
+          <h3>Task 18</h3>
+          <p>Создан кортеж k18 readonly тип boolean, содержащий элемент true, false. Напишите функцию f18, которая
+            выводит в .out-18 значения кортежа через пробел. Кортеж объявлен глобально по отношению к функции.</p>
+
+          <div><button class="button-primary b-18">button b-18</button></div>
+          <div class="out out-18"></div>
+        </section>
+
+        <section>
+          <h3>Task 19</h3>
+          <p>Создан кортеж k19 readonly тип boolean, содержащий элемент true, false. Напишите функцию f19, которая
+            выводит в .out-19 длину кортежа. Кортеж объявлен глобально по отношению к функции. </p>
+
+          <div><button class="button-primary b-19">button b-19</button></div>
+          <div class="out out-19"></div>
+        </section>
+
+        <section>
+          <h3>Task 20</h3>
+          <p>Создайте кортеж k20, содержащий массив чисел [2, 3]. Выведите в консоль.</p>
+
+        </section>
+
+
+      </div>
+
+      <div class="one-column">
+        <footer>
+          <p>Курсы Itgid.info</p>
+          <p><a href="https://itgid.info/ru/course/js20">javascript 2.0</a> | <a
+              href="https://itgid.info/ru/course/arraymethod">Методы массивов JavaScript</a> | <a
+              href="https://itgid.info/ru/course/function-2021">Функции JavaScript</a> | <a
+              href="https://itgid.info/ru/course/reactjs">ReactJS</a></p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script src="./javascript/sprint_06.js"></script>
+</body>
+
+</html>
