@@ -132,9 +132,14 @@ document.querySelector('.b-10').addEventListener('click', ():void=> {
 const ar_11 : number[] = [1, 0, 0, 0, 0];
 
 // тут создаете f11 стрелочную!!!
+const f11 = () : void => {
+   let out : (number | string) [] 
+   out = ar_11.map(item => item === 1 ? 'X' : item);
+       document.querySelector('.out-11').textContent = out.join('')
 
+}
 
-// document.querySelector('.b-11').addEventListener('click', f11);
+document.querySelector('.b-11').addEventListener('click', f11);
 
 
 // Task 12
