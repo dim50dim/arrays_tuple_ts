@@ -85,7 +85,7 @@ const ar_08 : number[] = [];
 
 const f08 = () : void => {
     let input = document.querySelector('.i-8') as HTMLInputElement;
-    let num =  +input.value;
+    let num : number =  +input.value;
     if(num % 2 === 0) ar_08.push(num);
     else ar_08.unshift(num);
 
