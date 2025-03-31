@@ -35,18 +35,21 @@ const f05 = (arr) => {
     }
     document.querySelector('.out-5').textContent = out;
 };
-// тут создаете f05 стрелочную!!!
 document.querySelector('.b-5').addEventListener('click', () => f05(ar_5));
 // Task 06
 // Напишите функцию, f06, которая создает массив состоящий только из чисел массива ar_06 и возвращает его. 
 const ar_06 = [1, false, 2, true, 5, false];
 // тут создаете f06 стрелочную!!!
+const f06 = (arr) => {
+    return arr.filter(item => typeof item === 'number');
+};
 document.querySelector('.b-6').addEventListener('click', () => {
-    // document.querySelector('.out-6').textContent = f06().join('=');
+    document.querySelector('.out-6').textContent = f06(ar_06).join('=');
 });
 // Task 07
 // Создайте readonly массив ar_07 содержащий всего два значения true, false. Тип задайте самостоятельно. Выведите массив в консоль.
-// const ar_07
+const ar_07 = [true, false];
+console.log(ar_07);
 // Task 08
 // Создайте функцию, которая читает число из input.i-8 и если число четное, то делает его push в массив ar_08, если не четное то unshift в массив. Массив создайте глобально по отношению к функции. Результат - выводите в .out-8, разделитель - подчеркивание.
 // const ar_08 

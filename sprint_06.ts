@@ -41,6 +41,7 @@ document.querySelector('.b-4').addEventListener('click', () : void => {
 const ar_5 : number[] = [];
 ar_5[2] = 333;
 ar_5[4] = 777;
+
 const f05 = (arr:number[]) : void => {
     let out : string = '';
     for(let elem of arr) {
@@ -48,7 +49,6 @@ const f05 = (arr:number[]) : void => {
     }
           document.querySelector('.out-5').textContent = out;
 }
-// тут создаете f05 стрелочную!!!
 
 
 document.querySelector('.b-5').addEventListener('click', () => f05(ar_5));
@@ -62,17 +62,21 @@ document.querySelector('.b-5').addEventListener('click', () => f05(ar_5));
 const ar_06 : (number|boolean)[] = [1, false, 2, true, 5, false]; 
 
 // тут создаете f06 стрелочную!!!
-
+const f06 = (arr: (number | boolean)[]): number[] => {
+    return arr.filter(item => typeof item === 'number') as number[];
+};
 
 
 document.querySelector('.b-6').addEventListener('click', ():void=> {
-    // document.querySelector('.out-6').textContent = f06().join('=');
+    document.querySelector('.out-6').textContent = f06(ar_06).join('=');
 });
 
 // Task 07
 // Создайте readonly массив ar_07 содержащий всего два значения true, false. Тип задайте самостоятельно. Выведите массив в консоль.
 
-// const ar_07
+const ar_07 : readonly boolean[]  = [true,false];
+console.log(ar_07);
+
 
 // Task 08
 // Создайте функцию, которая читает число из input.i-8 и если число четное, то делает его push в массив ar_08, если не четное то unshift в массив. Массив создайте глобально по отношению к функции. Результат - выводите в .out-8, разделитель - подчеркивание.
