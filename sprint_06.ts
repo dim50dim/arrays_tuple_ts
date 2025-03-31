@@ -98,10 +98,12 @@ document.querySelector('.b-8').addEventListener('click', f08);
 // Создайте функцию, которая принимает целое число n как аргумент и возвращает массив длиной n наполненный случайными числами от 0 до 10.
 
 // тут создаете f09 стрелочную!!!
-
+const f09 = (n:number) : number[] => {
+    return Array.from({ length: n }, () => Math.floor(Math.random() * 11));
+}
 
 document.querySelector('.b-9').addEventListener('click', ():void=> {
-    // document.querySelector('.out-9').textContent = f09(4).join('_');
+    document.querySelector('.out-9').textContent = f09(4).join('_');
 });
 
 // Task 10
