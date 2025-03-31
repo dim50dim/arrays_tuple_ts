@@ -42,16 +42,16 @@ const ar_5 : number[] = [];
 ar_5[2] = 333;
 ar_5[4] = 777;
 
-const f05 = (arr:number[]) : void => {
+const f05 = () : void => {
     let out : string = '';
-    for(let elem of arr) {
+    for(let elem of ar_5) {
         out += (elem !== undefined ? elem : '') + '-';
     }
           document.querySelector('.out-5').textContent = out;
 }
 
 
-document.querySelector('.b-5').addEventListener('click', () => f05(ar_5));
+document.querySelector('.b-5').addEventListener('click', f05);
 
 
 

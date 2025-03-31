@@ -28,14 +28,14 @@ document.querySelector('.b-4').addEventListener('click', () => {
 const ar_5 = [];
 ar_5[2] = 333;
 ar_5[4] = 777;
-const f05 = (arr) => {
+const f05 = () => {
     let out = '';
-    for (let elem of arr) {
+    for (let elem of ar_5) {
         out += (elem !== undefined ? elem : '') + '-';
     }
     document.querySelector('.out-5').textContent = out;
 };
-document.querySelector('.b-5').addEventListener('click', () => f05(ar_5));
+document.querySelector('.b-5').addEventListener('click', f05);
 // Task 06
 // Напишите функцию, f06, которая создает массив состоящий только из чисел массива ar_06 и возвращает его. 
 const ar_06 = [1, false, 2, true, 5, false];
