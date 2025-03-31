@@ -99,7 +99,9 @@ document.querySelector('.b-8').addEventListener('click', f08);
 
 // тут создаете f09 стрелочную!!!
 const f09 = (n:number) : number[] => {
+
     return Array.from({ length: n }, () => Math.floor(Math.random() * 11));
+
 }
 
 document.querySelector('.b-9').addEventListener('click', ():void=> {
