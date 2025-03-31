@@ -81,11 +81,18 @@ console.log(ar_07);
 // Task 08
 // Создайте функцию, которая читает число из input.i-8 и если число четное, то делает его push в массив ar_08, если не четное то unshift в массив. Массив создайте глобально по отношению к функции. Результат - выводите в .out-8, разделитель - подчеркивание.
 
-// const ar_08 
+const ar_08 : number[] = [];
 
-// тут создаете f08 стрелочную!!!
+const f08 = () : void => {
+    let input = document.querySelector('.i-8') as HTMLInputElement;
+    let num =  +input.value;
+    if(num % 2 === 0) ar_08.push(num);
+    else ar_08.unshift(num);
 
-// document.querySelector('.b-8').addEventListener('click', f08);
+    document.querySelector('.out-8').innerHTML = ar_08.join('_');
+}
+
+document.querySelector('.b-8').addEventListener('click', f08);
 
 // Task 09
 // Создайте функцию, которая принимает целое число n как аргумент и возвращает массив длиной n наполненный случайными числами от 0 до 10.
