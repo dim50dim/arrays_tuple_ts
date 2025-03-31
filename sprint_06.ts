@@ -113,14 +113,17 @@ document.querySelector('.b-9').addEventListener('click', ():void=> {
 
 
 // тут создаете f10 стрелочную!!!
-const f10 = (arr: number[]) : number[] => {
-    
-}
+const f10 = (ar_10: number[]): [number[], number[]] => {
+    return [
+        ar_10.filter(num => num % 2 === 0),
+        ar_10.filter(num => num % 2 !== 0)
+    ];
+};
 
 document.querySelector('.b-10').addEventListener('click', ():void=> {
-    // const ar_10 : number[] = [22, 33, 44, 55, 66, 66, 88, 77];
-    // document.querySelector('.out-101').textContent = f10(ar_10)[0].join('_');
-    // document.querySelector('.out-102').textContent = f10(ar_10)[1].join('_');
+    const ar_10 : number[] = [22, 33, 44, 55, 66, 66, 88, 77];
+    document.querySelector('.out-101').textContent = f10(ar_10)[0].join('_');
+    document.querySelector('.out-102').textContent = f10(ar_10)[1].join('_');
 });
 
 // Task 11

@@ -75,10 +75,16 @@ document.querySelector('.b-9').addEventListener('click', () => {
 // Task 10
 // Создайте функцию, которая принимает массив ar_10 и возвращает два массива, первый из которых содержит только четные числа из исходного массива, а второй только нечетные числа. 
 // тут создаете f10 стрелочную!!!
+const f10 = (ar_10) => {
+    return [
+        ar_10.filter(num => num % 2 === 0),
+        ar_10.filter(num => num % 2 !== 0)
+    ];
+};
 document.querySelector('.b-10').addEventListener('click', () => {
-    // const ar_10 : number[] = [22, 33, 44, 55, 66, 66, 88, 77];
-    // document.querySelector('.out-101').textContent = f10(ar_10)[0].join('_');
-    // document.querySelector('.out-102').textContent = f10(ar_10)[1].join('_');
+    const ar_10 = [22, 33, 44, 55, 66, 66, 88, 77];
+    document.querySelector('.out-101').textContent = f10(ar_10)[0].join('_');
+    document.querySelector('.out-102').textContent = f10(ar_10)[1].join('_');
 });
 // Task 11
 // Создайте функцию, которая выводит в .out-11 одномерный массив ar_11. Если в массиве встречается число 1, то на выводе оно заменяется на 'X' - латинскую X в верхнем регистре. Разделитель - пробел.
