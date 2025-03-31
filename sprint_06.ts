@@ -113,7 +113,9 @@ document.querySelector('.b-9').addEventListener('click', ():void=> {
 
 
 // тут создаете f10 стрелочную!!!
-
+const f10 = (arr: number[]) : number[] => {
+    
+}
 
 document.querySelector('.b-10').addEventListener('click', ():void=> {
     // const ar_10 : number[] = [22, 33, 44, 55, 66, 66, 88, 77];
