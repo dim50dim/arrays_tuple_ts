@@ -171,13 +171,17 @@ document.querySelector('.b-13').addEventListener('click', f13);
 // Task 14
 // Создайте кортеж k14 тип данных string, string и заполните его 'type', 'script'. Для проверки выведите в консоль.
 
-// const k14
+const k14 : [string, string] = ['type','script'];
+console.log(k14);
+
 
 
 // Task 15
 // Создайте кортеж k15 тип данных number, number и заполните его числами 77, 99. Для проверки выведите в консоль.
 
-// const k15
+const k15 : [number,number] = [77,99];
+console.log(k15);
+
 
 // Task 16
 // Создан кортеж k16. Напишите функцию, которая меняет в нем числа - добавляет к каждому числу по 10 и выводит в .out-16 сумму элементов кортежа.
@@ -185,9 +189,14 @@ document.querySelector('.b-13').addEventListener('click', f13);
 const k16 : [number, number] = [77, 88];
 
 // тут создаете f16 стрелочную!!!
+const f16 = () : void => {
+        let result : [number,number] = [k16[0] + 10, k16[1] + 10];
+        const sum : number = result[0] + result[1];
 
+        document.querySelector('.out-16').textContent = String(sum);
+}
 
-// document.querySelector('.b-16').addEventListener('click', f16);
+document.querySelector('.b-16').addEventListener('click', f16);
 
 
 // Task 17
