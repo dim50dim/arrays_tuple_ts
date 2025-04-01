@@ -160,13 +160,13 @@ const ar_13 : number[][] = [
     [0,1,0],
     [1,0,1]
 ];
-const f13 = () => {
-    
+const f13 = () : void => {
+
 }
 // тут создаете f13 стрелочную!!!
 
 
-// document.querySelector('.b-13').addEventListener('click', f13);
+document.querySelector('.b-13').addEventListener('click', f13);
 
 // Task 14
 // Создайте кортеж k14 тип данных string, string и заполните его 'type', 'script'. Для проверки выведите в консоль.
