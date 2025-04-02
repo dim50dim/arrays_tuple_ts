@@ -17,7 +17,7 @@ document.querySelector('.out-2').textContent = ar_2.join('_');
 const ar_3 : string[] = ['Hello','Hi','Trust'];
 
 // тут создаете f03 стрелочную!!!
-const f03 =(arr:string[]) : string[] => arr.filter(item=> item.length >= 4);
+const f03 =(arr:string[]) : string[] => arr.filter(item => item.length >= 4);
 
 document.querySelector('.b-3').addEventListener('click', () : void => {
     document.querySelector('.out-3').textContent = f03(ar_3).join(' ');
