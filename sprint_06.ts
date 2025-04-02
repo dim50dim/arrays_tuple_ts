@@ -240,4 +240,5 @@ document.querySelector('.b-19').addEventListener('click', f19);
 // Task 20
 // Создайте кортеж k20, содержащий массив чисел [2, 3]. Выведите в консоль.
 
-// const k20 
+const k20 : [number[]] = [[2,3]];
+console.log(k20);
