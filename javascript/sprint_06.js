@@ -31,7 +31,10 @@ ar_5[4] = 777;
 const f05 = () => {
     let out = '';
     for (let elem of ar_5) {
-        out += (elem !== undefined ? elem : '') + '-';
+        if (elem !== undefined)
+            out += elem;
+        else
+            out += '' + '-';
     }
     document.querySelector('.out-5').textContent = out;
 };
