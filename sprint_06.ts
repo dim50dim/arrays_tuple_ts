@@ -46,7 +46,7 @@ const f05 = () : void => {
     let out : string = '';
     for(let elem of ar_5) {
 
-        if( elem !== undefined) out += elem;
+        if( elem !== undefined) out += elem + '-';
         else out += '' + '-'
     }
           document.querySelector('.out-5').textContent = out;
@@ -65,7 +65,7 @@ const ar_06 : (number|boolean)[] = [1, false, 2, true, 5, false];
 
 // тут создаете f06 стрелочную!!!
 const f06 = (arr: (number | boolean)[]): number[] => {
-    return arr.filter(item => typeof item === 'number') as number[];
+    return arr.filter(item => typeof item === 'number');
 };
 
 

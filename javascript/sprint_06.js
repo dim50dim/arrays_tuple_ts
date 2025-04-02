@@ -32,7 +32,7 @@ const f05 = () => {
     let out = '';
     for (let elem of ar_5) {
         if (elem !== undefined)
-            out += elem;
+            out += elem + '-';
         else
             out += '' + '-';
     }
