@@ -88,6 +88,7 @@ const ar_08 : number[] = [];
 const f08 = () : void => {
     let input = document.querySelector('.i-8') as HTMLInputElement;
     let num : number =  +input.value;
+
     if(num % 2 === 0) ar_08.push(num);
     else ar_08.unshift(num);
 
@@ -163,7 +164,10 @@ const ar_13 : number[][] = [
     [1,0,1]
 ];
 const f13 = () : void => {
-
+const arr : number[][] = ar_13.map(item => item.map(elem => elem === 1 ? 0 : 1));
+const res = arr.map(item => item.join(' ')).join('<br>');
+document.querySelector('.out-13').innerHTML = String(res);
+    
 }
 // тут создаете f13 стрелочную!!!
 
@@ -193,7 +197,7 @@ const k16 : [number, number] = [77, 88];
 // тут создаете f16 стрелочную!!!
 const f16 = () : void => {
         let result : [number,number] = [k16[0] + 10, k16[1] + 10];
-        const sum : number = result[0] + result[1];
+        const sum : number = result.reduce((accum,item) => accum += item);
 
         document.querySelector('.out-16').textContent = String(sum);
 }

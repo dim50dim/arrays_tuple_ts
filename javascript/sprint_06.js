@@ -113,6 +113,9 @@ const ar_13 = [
     [1, 0, 1]
 ];
 const f13 = () => {
+    const arr = ar_13.map(item => item.map(elem => elem === 1 ? 0 : 1));
+    const res = arr.map(item => item.join(' ')).join('<br>');
+    document.querySelector('.out-13').innerHTML = String(res);
 };
 // тут создаете f13 стрелочную!!!
 document.querySelector('.b-13').addEventListener('click', f13);
@@ -130,7 +133,7 @@ const k16 = [77, 88];
 // тут создаете f16 стрелочную!!!
 const f16 = () => {
     let result = [k16[0] + 10, k16[1] + 10];
-    const sum = result[0] + result[1];
+    const sum = result.reduce((accum, item) => accum += item);
     document.querySelector('.out-16').textContent = String(sum);
 };
 document.querySelector('.b-16').addEventListener('click', f16);
