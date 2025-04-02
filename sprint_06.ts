@@ -231,9 +231,11 @@ document.querySelector('.b-18').addEventListener('click', f18);
 let k19 : readonly [boolean, boolean] = [true, false];
 
 // тут создаете f19 стрелочную!!!
+const f19 = () : void => {
+    document.querySelector('.out-19').textContent = String(k19.length);
+}
 
-
-// document.querySelector('.b-19').addEventListener('click', f19);
+document.querySelector('.b-19').addEventListener('click', f19);
 
 // Task 20
 // Создайте кортеж k20, содержащий массив чисел [2, 3]. Выведите в консоль.
