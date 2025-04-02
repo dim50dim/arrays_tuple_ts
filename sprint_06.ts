@@ -205,8 +205,11 @@ document.querySelector('.b-16').addEventListener('click', f16);
 let k17 : [...number[]] = [2, 2, 3, 4];
 
 // тут создаете f17 стрелочную!!!
-
-// document.querySelector('.b-17').addEventListener('click', f17);
+   const f17 = () : void => {
+      const sum = k17.reduce((accum,item) => accum += item);
+      document.querySelector(".out-17").textContent = String(sum);
+   }
+document.querySelector('.b-17').addEventListener('click', f17);
 
 
 

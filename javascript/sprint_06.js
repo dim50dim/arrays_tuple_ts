@@ -135,7 +135,11 @@ document.querySelector('.b-16').addEventListener('click', f16);
 // Создан кортеж k17. Напишите функцию, которая выводит в .out-17 сумму элементов кортежа. Обратите внимание - количество элементов кортежа при проверке может меняться. 
 let k17 = [2, 2, 3, 4];
 // тут создаете f17 стрелочную!!!
-// document.querySelector('.b-17').addEventListener('click', f17);
+const f17 = () => {
+    const sum = k17.reduce((accum, item) => accum += item);
+    document.querySelector(".out-17").textContent = String(sum);
+};
+document.querySelector('.b-17').addEventListener('click', f17);
 // Task 18
 // Создан кортеж k18 readonly тип boolean, содержащий элемент true, false. Напишите функцию f18, которая выводит в .out-18 значения кортежа через пробел. Кортеж объявлен глобально по отношению к функции. 
 let k18 = [true, false];
