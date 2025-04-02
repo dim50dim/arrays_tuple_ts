@@ -144,7 +144,10 @@ document.querySelector('.b-17').addEventListener('click', f17);
 // Создан кортеж k18 readonly тип boolean, содержащий элемент true, false. Напишите функцию f18, которая выводит в .out-18 значения кортежа через пробел. Кортеж объявлен глобально по отношению к функции. 
 let k18 = [true, false];
 // тут создаете f18 стрелочную!!!
-// document.querySelector('.b-18').addEventListener('click', f18);
+const f18 = () => {
+    document.querySelector(".out-18").textContent = String(k18.join(' '));
+};
+document.querySelector('.b-18').addEventListener('click', f18);
 // Task 19
 // Создан кортеж k19 readonly тип boolean, содержащий элемент true, false. Напишите функцию f19, которая выводит в .out-19 длину кортежа. Кортеж объявлен глобально по отношению к функции. 
 let k19 = [true, false];

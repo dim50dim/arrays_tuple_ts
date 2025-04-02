@@ -219,9 +219,11 @@ document.querySelector('.b-17').addEventListener('click', f17);
 let k18 : readonly [boolean, boolean] = [true, false];
 
 // тут создаете f18 стрелочную!!!
+const f18 = () : void => {
+    document.querySelector(".out-18").textContent = String(k18.join(' '));
+}
 
-
-// document.querySelector('.b-18').addEventListener('click', f18);
+document.querySelector('.b-18').addEventListener('click', f18);
 
 // Task 19
 // Создан кортеж k19 readonly тип boolean, содержащий элемент true, false. Напишите функцию f19, которая выводит в .out-19 длину кортежа. Кортеж объявлен глобально по отношению к функции. 
